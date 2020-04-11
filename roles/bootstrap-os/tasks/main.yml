@@ -51,6 +51,7 @@
   when:
     - override_system_hostname
     - ansible_os_family not in ['Suse', 'Container Linux by CoreOS', 'Flatcar Container Linux by Kinvolk', 'ClearLinux'] and not is_fedora_coreos
+  # ignore_errors: true
 
 # (2/3)
 - name: Assign inventory name to unconfigured hostnames (CoreOS, non-Flatcar, Suse and ClearLinux only)

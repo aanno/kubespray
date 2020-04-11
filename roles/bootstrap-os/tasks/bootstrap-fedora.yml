@@ -42,6 +42,9 @@
 # See https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#managed-node-requirements
 - name: Install libselinux-python
   package:
-    name: libselinux-python
+    # name: libselinux-python
+    name: python3-libselinux
     state: present
+    use: dnf
   become: true
+  # ignore_errors: true
