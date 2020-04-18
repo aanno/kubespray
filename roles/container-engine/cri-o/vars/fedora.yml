@@ -1,5 +1,6 @@
 ---
 crio_packages:
+  # `sudo dnf module enable cri-o:1.17` is needed before 
   - cri-o
   - cri-tools
 

@@ -122,6 +122,7 @@
   systemd:
     daemon_reload: yes
 
+# `/etc/crio/crio.conf`: runtime_path of runc must be `/usr/bin/runc`
 - name: Install cri-o service
   service:
     name: "{{ crio_service }}"

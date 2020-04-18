@@ -92,6 +92,13 @@
     - kube_network_node_prefix is defined
     - kube_network_plugin != 'calico'
 
+- name: debug ip
+  debug:
+    var: ip
+- name: debug ansible_all_ipv4_addresses
+  debug:
+    var: ansible_all_ipv4_addresses
+
 - name: Stop if ip var does not match local ips
   assert:
     that: ip in ansible_all_ipv4_addresses
