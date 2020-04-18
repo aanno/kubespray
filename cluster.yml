@@ -12,6 +12,8 @@
         - check
   vars:
     ansible_connection: local
+    # TODO tp: where is the right place for this?
+    kubelet_cgroup_driver: systemd
 
 - hosts: all
   gather_facts: false
