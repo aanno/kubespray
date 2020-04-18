@@ -36,3 +36,18 @@
 * https://github.com/cri-o/cri-o/blob/master/tutorials/kubeadm.md
 * KUBELET_EXTRA_ARGS=--feature-gates="AllAlpha=false,RunAsGroup=true" --container-runtime=remote --cgroup-driver=systemd --container-runtime-endpoint='unix:///var/run/crio/crio.sock' --runtime-request-timeout=5m
 
+## kube container
+
+```bash
+# podman images
+REPOSITORY                           TAG       IMAGE ID       CREATED       SIZE
+docker.io/coredns/coredns            1.6.9     faac9e62c0d6   3 weeks ago   43.3 MB
+k8s.gcr.io/kube-proxy                v1.17.4   6dec7cfde1e5   5 weeks ago   118 MB
+k8s.gcr.io/kube-apiserver            v1.17.4   2e1ba57fe95a   5 weeks ago   173 MB
+k8s.gcr.io/kube-controller-manager   v1.17.4   7f997fcf3e94   5 weeks ago   163 MB
+k8s.gcr.io/kube-scheduler            v1.17.4   5db16c1c7aff   5 weeks ago   96 MB
+k8s.gcr.io/pause                     3.1       da86e6ba6ca1   2 years ago   749 kB
+```
+
+* Test if your podman/docker could pull and run these image. If not, you've got a
+  problem.
