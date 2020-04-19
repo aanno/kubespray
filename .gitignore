@@ -14,7 +14,7 @@ contrib/terraform/aws/credentials.tfvars
 **/*.sw[pon]
 *~
 vagrant/
-/coreos/my.ign
+/coreos/*.ign
 /coreos/fedora-coreos-*
 
 # Ansible inventory
