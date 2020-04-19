@@ -1,5 +1,9 @@
 # Install kubespray
 
+* https://kubernetes.io/docs/setup/production-environment/tools/kubespray/
+* https://docs.fedoraproject.org/en-US/fedora-coreos/bare-metal/
+* https://kubespray.io/#/docs/fcos
+
 ## Firewall ports
 
 
@@ -51,3 +55,13 @@ k8s.gcr.io/pause                     3.1       da86e6ba6ca1   2 years ago   749 
 
 * Test if your podman/docker could pull and run these image. If not, you've got a
   problem.
+
+
+## Problems
+
+* https://discussion.fedoraproject.org/t/installing-using-cri-o-on-fedora-coreos/15961/5
+
+ 9280 server.go:191] Warning: For remote container runtime, --pod-infra-container-image is ignored in kubelet, which s>
+s been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https>
+  9280 feature_gate.go:243] feature gates: &{map[]}
+  9280 feature_gate.go:243] feature gates: &{map[]}
