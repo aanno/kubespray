@@ -106,6 +106,6 @@ crio_runc_path: /usr/bin/runc
 
 ## Overwrite kubelet_cgroups_driver if needed
 # defaults to: kubelet_cgroup_driver_detected
-# 
+#
 # known to be necessary for fedora and fedora coreos:
 kubelet_cgroup_driver: systemd

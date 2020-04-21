@@ -5,4 +5,4 @@ crio_packages:
 
 crio_service: crio
 crio_conmon: /usr/libexec/crio/conmon
-crio_runc_path: /usr/bin/runc
+crio_runc_path: "{{ runc_binary | default('/usr/sbin/runc') }}"
